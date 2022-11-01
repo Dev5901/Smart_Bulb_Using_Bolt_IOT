@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        
+        <title>Smart Bulb</title>
+
+        <script type="text/javascript" src="https://cloud.boltiot.com/static/js/boltCommands.js"></script>
+        <script src="https://kit.fontawesome.com/f74ac6462b.js" crossorigin="anonymous"></script>
+
+        <script>
+        setKey('{{ApiKey}}','{{Name}}');
+        </script>
+
+    </head>
+
+    <body bgcolor="#00FFFF" text="#000000">
+        
+
+        <center>
+        <h1 style="color:black;font-size:100px">Control your SMART BULB</h1>
+        
+        <button style="font-size:30px;height:100px;width:125px;background-color: #4CAF50" onclick="digitalWrite(0, 'LOW');">ON</button>
+        
+        <button style="font-size:30px;height:100px;width:125px;background-color: #F44336" onclick="digitalWrite(0, 'HIGH');">OFF</button>
+        </center>
+
+    </body>
+
+</html>
